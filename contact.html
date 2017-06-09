@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link type="text/css" rel="stylesheet" href="midterm.css"/>
+    <link rel="icon" type="image/gif" href="image/m1.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <style>
+
+
+    </style>
+
+</head>
+
+<!--<body class="contactwidth" background="image/big2viewflower.jpg" style="no-repeat">-->
+
+<body style="background: url(image/big4viewflower.jpg) no-repeat; background-size: cover;">
+
+<!--<div id="contactwidth">- ->
+
+    <!--<img id="contactcenter" src="image/viewflower.jpeg" width="2000"/>-->
+
+    <div class="top">
+        <img src="image/mosaictour1.png"/>
+        <nav>
+            <ul>
+                <li><a class="nav" href="index.html">Home</a></li>
+                <li><a class="nav" href="gallery.html" >Gallery</a></li>
+                <li><a class="nav" href="sanfrancisco.html" >San Francisco</a></li>
+                <li><a class="nav" href="map.html" >Tour Map</a></li>
+                <li><a class="nav" href="contact.html" >Sign Up A Tour</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--<div>-->
+    <!--<h1 align="center">CONTACT US</h1>-->
+    <!--<p id="contactform" align="center">Fill out the form to know more!</p>-->
+    <!--</div>-->
+
+    <!--<form class="inputname">-->
+    <!--Your Name:<br>-->
+    <!--<input class="inputbox" type="text" name="firstname"><br>-->
+    <!--Your Email: <br>-->
+    <!--<input class="inputbox" type="text" name="lastnames"><br>-->
+    <!--</form>-->
+
+    <!--<form class="inputname">-->
+    <!--Leave A Message: <br>-->
+    <!--<input class="inputmessage" type="text" name="lastnames"><br>-->
+    <!--</form>-->
+
+    <!--<div id="submit">-->
+    <!--<input class="buttonbig" type="Submit" value="Sumbit" href="index.html">-->
+    <!--</div>-->
+
+    <!--</div>-->
+
+    <div class="contactform">
+        <form>
+            <fieldset>
+                <legend>Sign Up A Tour</legend>
+                <label> First Name:
+                    <input type="text" name="Fist_Name" id="First_Name"/></label><br>
+                <label> Last Name:
+                    <input type="text" name="Last_Name" id="Last_Name"/></label><br>
+                <label>Email:
+                    <input type="email" name="Email"/></label>
+                <br>
+                <label>Phone:
+                    <input type="text" name="Phone"/></label>
+                <br>
+                <label>Select the date:
+                    <input type="date" name="depart" id="date">
+                </label>
+                <br>
+                <label>Select a tour:
+                    <select id="tour">
+                        <option value="0">16th Avenue Tiled Steps</option>
+                        <option value="1">Kid Serve Mosaic Murals</option>
+                        <option value="2">Powell St. Station</option>
+                    </select>
+                </label><br>
+                <label><input type="button" name="button" class="button" value="Submit to complete"
+                              onclick="myFunction()"/>
+                </label>
+
+            </fieldset>
+
+            <div id="confirmation"></div>
+        </form>
+    </div>
+
+
+    <script type="text/javascript">
+
+        function myFunction() {
+            var i = document.getElementById("tour").value;
+            var First_Name = document.getElementById("First_Name").value;
+            var Last_Name = document.getElementById("Last_Name").value;
+
+            if (i == 0) {
+                document.getElementById("confirmation").innerHTML = ("Dear " + First_Name + " " + Last_Name + ", you have complete your 16th Avenue Tiled Steps tour booking, Thank you!");
+            }
+            else if (i == 1) {
+                document.getElementById("confirmation").innerHTML = ("Dear " + First_Name + " " + Last_Name + ", you have complete your Kid Serve Mosaic Murals tour booking, Thank you!");
+            }
+            else if (i == 2) {
+                document.getElementById("confirmation").innerHTML = ("Dear " + First_Name + " " + Last_Name + ", you have complete your Powell St. Station tour booking, Thank you!");
+            }
+
+
+        }
+    </script>
+
+<!--</div>-->
+
+    <div class="footer">
+        <p class="vertical">Copyright © 2017 | Site and Photography by Mengru Zhang | All rights reserved </p>
+    </div>
+
+
+</body>
+</html>
